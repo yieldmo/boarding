@@ -25,10 +25,10 @@
     <h4 class="" style="margin-bottom: 40px;"><%= @metadata[:title] %></h4>
 
     <%= form_tag("submit", method: "post", style: "text-align: left") do %>
-      <%= label_tag(:first_name, t(:first_name_label)) %>
+      <!-- <%= label_tag(:first_name, t(:first_name_label)) %>
       <%= text_field_tag :first_name, '', class: "form-control", placeholder: t(:first_name_placeholder) %><br />
       <%= label_tag(:last_name, t(:last_name_label)) %>
-      <%= text_field_tag :last_name, '', class: "form-control", placeholder: t(:last_name_placeholder) %><br />
+      <%= text_field_tag :last_name, '', class: "form-control", placeholder: t(:last_name_placeholder) %><br /> -->
       <%= label_tag(:email, t(:email_label), class: "required") %>
       <%= email_field_tag :email, '', class: "form-control", placeholder: t(:email_placeholder) %><br />
 
